@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 oct. 2018, 09:21:43
+    Author     : Administrateur
+*/
+
+body{
+    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color:gray;
+    height:40px;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+nav a{
+    color:white;
+    font-weight: bold;
+    padding:11px 20px;
+    transition: all 0.3s ease-out;
+}
+
+nav a:hover{
+    background-color: lightgray;
+    
+}
+
+label{ 
+   font-weight:bold;
+   display:inline-block;
+   width:150px;
+   margin-top:5px;
+   margin-bottom:10px;
+   text-align: left;
+}
+
+input[type="text"], input[type="password"]{
+    border-radius: 3px;
+    
+}
+
+legend{
+    background-color:gray;
+    color:white;
+    font-weight: bold;
+    padding:5px;
+    text-align:left;
+}
+
+form{
+    width:600px;
+    margin: 0 auto;
+}
+
+.bouton{
+    padding:15px;
+    background-color:#23a5cc;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid #23a5cc;
+    transition: all 0.3s ease-out;
+}
+
+.bouton:hover{
+    
+    background-color:blueviolet;
+    border:1px solid blueviolet;
+}
+
+.message_erreur{
+    opacity:0;
+    padding:15px;
+    background-color:orange;
+    color:white;
+    font-weight:bold;
+    margin-top:15px;
+    border-radius:3px;
+    transition: all 0.5s ease-in;
+    
+}
+
+.message_reussite{
+    padding:15px;
+    background-color:#23a5cc;
+    color:white;
+    font-weight:bold;
+    margin-top:15px;
+    border-radius:3px;
+    transition: all 0.5s ease-in;
+    
+}

@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 oct. 2018, 12:30:06
+    Author     : Administrateur
+*/
+
+body{
+   text-align: center;
+   width:1280px;
+   margin : 0 auto;
+}
+
+nav{
+    background-color:gray;
+    height:40px;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+nav a{
+    color:white;
+    font-weight: bold;
+    padding:11px 20px;
+    transition: all 0.3s ease-out;
+}
+
+nav a:hover{
+    background-color: lightgray;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+#titre_page{
+    background-image:url("../Images/fond_carte.jpg");
+    border:1px solid black;
+    padding:10px;
+    margin-bottom: 20px;
+}
+
+header > h1{
+    background-color:white;
+    display:inline-block;
+    padding:10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+button{
+    background-color:lightcoral;
+    border-radius: 5px;
+    color:white;
+    font-weight:bold;
+    padding:15px;
+    border:none;
+    font-size:40px;
+    transition: all 0.2s ease-out;
+    margin:20px auto;
+    display:block;
+}
+
+button:hover{
+    background-color:red;
+}
+
+button:active{
+    background-color:blue;
+    transition: none;
+}
+
+table{
+     margin: 20px auto;
+}
+
+table,tr,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    padding:5px;
+    width: 30px;
+    height: 30px;
+}
+
+table > tbody > tr:nth-child(even) > td:nth-child(even), table > tbody > tr:nth-child(odd) > td:nth-child(odd){
+    background-color:red;
+    color:white;
+    transition : all 0.5s ease-in;
+}
+
+table > tbody > tr:nth-child(even) > td:nth-child(even):hover, table > tbody > tr:nth-child(odd) > td:nth-child(odd):hover{
+    box-shadow: 3px 3px 5px 0px #c0c0c0;
+    
+}
+
+
+footer{
+    border-top : 1px solid black;
+    margin-top: 30px;
+    padding:5px;
+    background-color:grey;
+    color:white;
+}
+
+/*PENDU*/
+
+.lettre_vide{
+    margin-left:10px;
+}
+
+#message{
+    margin-top:25px;
+    font-size:20px;
+    padding:5px;
+    background-color:lightsteelblue;
+    display:none;
+}
+
+.titre_pendu{
+    background-color: lightblue;
+    margin-top:20px;
+}
+
+
+.carte_defaut{
+    padding:20px;
+    border: 3px solid #046380;
+    margin:10px;
+    border-radius: 5px;
+    transition:all 0.2s ease-out;
+    display:inline-block;
+}
+
+.carte_defaut:hover{
+     box-shadow: 3px 3px 5px 0px #c0c0c0;
+
+}
+
+.carte_trouve{
+    transition : all 0.5s ease-out;
+    transform: scale(0,0);
+}
+
+#tableau_memory{
+    min-height:100px;
+    padding : 30px;
+    
+}
+
+
+#message_memory{
+    padding:15px;
+    background-color:#23a5cc;
+    color:white;
+    font-weight:bold;
+    margin-top:15px;
+    border-radius:3px;
+    transition: all 0.5s ease-in;
+    display:inline-block;
+    margin : 0 auto;
+    opacity:0;
+}
+
+
+
+.ligne_carte{
+    height: 60px;
+    margin: 10px auto;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <link href="Css/style.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+           <nav>
+                <a href="films.html">Films</a>
+                <a href="series.html">Series</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="pendu.html">Pendu</a>
+                <a href="formjs.html">Connexion</a>
+                <a href="memory.html">Memory</a>
+            </nav>
+        </header>
+        <div class="patate">
+            <form action="inscription.php" method="get">
+                <label for="login">Login : </label>
+                    <input type="text" name="login" id="login" /><br />  
+                <label for="mdp">Mot de passe : </label>
+                    <input type="password" name="mdp" id="mdp" /><br />  
+                <label for="mdp_conf">Mot de passe confirmation : </label>
+                    <input type="password" name="mdp_conf" id="mdp_conf" /><br />            
+                <label for="genre">Genre :</label>
+                    F<input type="radio" name="genre" id="genre" value="F">
+                    M<input type="radio" name="genre" value="M"><br />
+                <label for="dn">Date de naissance : </label>
+                    <input type="date" name="dn" id="dn" /><br />
+                <label for="adresse">Adresse : </label>
+                    <textarea name="adresse" id="adresse"></textarea><br />
+                <label for="liste"> Pays :</label>
+                    <select name="mon_choix" id="liste">
+                        <option value="1">France</option>
+                        <option value="2">Angleterre</option>
+                        <option value="3">Allemagne</option>
+                        <option value="4">Belgique</option>
+                    </select><br />
+                <label for="newsletter">Inscription newsletter :</label>
+                    <input type="checkbox" value="Oui" name="newsletter" id="newsletter"/><br /> 
+                <br />
+                <br /> 
+                <input type="submit" value="Soumettre">
+                <input type="reset">
+            </form>
+        </div>
+    </body>
+</html>

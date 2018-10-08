@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 oct. 2018, 09:14:55
+    Author     : Administrateur
+*/
+nav{
+    background-color:gray;
+    height:40px;
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+nav a{
+    color:white;
+    font-weight: bold;
+    padding:11px 20px;
+    transition: all 0.3s ease-out;
+}
+
+nav a:hover{
+    background-color: lightgray;
+    
+}
+
+a{
+    color:blue;
+    padding-left:5px;
+    padding-right:5px;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 20px;
+    transition: all 0.5s ease-out;
+}
+
+body{
+    /* background-image: url("../Images/palmier.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:250px;*/
+}
+
+a:hover{
+    color:red;
+}
+
+th{
+    border-bottom:1px dotted black;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: lightsteelblue;
+    margin: 0 auto;
+}
+
+header,table{
+    border: 5px solid black;
+    border-radius:3px;
+    padding:5px;  
+}
+
+header{
+    font-size:30px;
+    font-family: serif;
+    color:lightcoral;
+    text-align:center;
+    background-color: white;
+}
+
+
+
+.patate{
+    display:flex;
+}
+
+form{    
+    margin: 20px auto;
+}
+
+label{
+    display:inline-block;
+    width:200px;
+}
+
+
