@@ -7,8 +7,9 @@ and open the template in the editor.
 <html>
     <head>
         <title>Jeu memory</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link href="Css/memory.css" rel="stylesheet" type="text/css"/>
-        <meta charset="UTF-8">
+       <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -23,18 +24,19 @@ and open the template in the editor.
             </nav>
             
         </header>
-        <div id="titre_page">
-            <h1 id="test">Memory</h1>
-        </div>
-        <h3> Entrez le nombre de cases souhaitées entre 2 et 24</h3>
-        <form id="nombre_de_case" method="post">
-            <input type="texte" id="nb_cases" >
-            <input type="button" id="demarrer_jeu" value="Confirmer">
-        </form>
-        
-        <div id="tableau_memory"></div>
-        <div id="message_memory"></div>
+        <main>
+            <div id="titre_page">
+                <h1 id="test">Memory</h1>
+            </div>
+            <h3> Entrez le nombre de cases souhaitées entre 2 et 24</h3>
+            <form id="nombre_de_case" method="post">
+                <input type="number" id="nb_cases" >
+                <input type="button" class="bouton" id="demarrer_jeu" value="Confirmer">
+            </form>
 
+            <div id="tableau_memory"></div>
+            <div id="message_memory"></div>
+        </main>
         <footer>
             M2i - Jessy SCHNEIDER - 2018
         </footer>

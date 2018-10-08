@@ -10,8 +10,13 @@ and open the template in the editor.
 
 body{
    text-align: center;
-   width:1280px;
    margin : 0 auto;
+   background-color:lightgray;
+}
+
+header,footer,main{
+    width:1280px;
+    margin:0 auto;
 }
 
 nav{
@@ -133,23 +138,52 @@ footer{
 }
 
 
-.carte_defaut{
-    padding:20px;
+.carte_defaut,.carte_active{
+    padding:40px 20px;
     border: 3px solid #046380;
-    margin:10px;
+    margin:5px;
     border-radius: 5px;
-    transition:all 0.2s ease-out;
+    transition:all 0.3s ease-out;
     display:inline-block;
+    background-color: white;
 }
 
+
+
+.carte_active::before {
+    content: "\f059";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: "Font Awesome 5 Free";
+    font-size:40px;
+    opacity:0;
+ }
+
+.carte_defaut::before {
+    content: "\f059";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: "Font Awesome 5 Free";
+    left:-5px;
+    top:0;
+    font-size:40px;
+    color:#046380;
+    transition:all 0.3s ease-out;
+ }
+ 
+ .carte_defaut:hover::before {
+     color:#eb2f4a;
+ }
+ 
+ 
+
 .carte_defaut:hover{
-     box-shadow: 3px 3px 5px 0px #c0c0c0;
+    box-shadow: 3px 3px 5px 0px #c0c0c0;
+    border: 3px solid #eb2f4a;
 
 }
 
 .carte_trouve{
-    transition : all 0.5s ease-out;
+   
     transform: scale(0,0);
+    opacity:0;
+    transition : all 0.5s ease-out;
 }
 
 #tableau_memory{
@@ -157,7 +191,6 @@ footer{
     padding : 30px;
     
 }
-
 
 #message_memory{
     padding:15px;
@@ -174,8 +207,29 @@ footer{
 
 
 
+input[type="number"]{
+    padding:15px;
+    border-radius: 5px;
+    border:1px solid #23a5cc;
+}
+
 .ligne_carte{
     height: 60px;
     margin: 10px auto;
+}
+
+.bouton{
+    padding:15px;
+    background-color:#23a5cc;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    border:1px solid #23a5cc;
+    transition: all 0.3s ease-out;
+}
+
+.bouton:hover{
+    background-color:blueviolet;
+    border:1px solid blueviolet;
 }
 

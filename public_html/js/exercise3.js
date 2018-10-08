@@ -66,11 +66,13 @@ function retournerCarte(event) {
             if (typeof (couleur1) === "undefined") {
                 couleur1 = event.target.getAttribute('data-color');
                 cibleCouleur1 = event.target;
-                event.target.style.background = event.target.getAttribute('data-color');
+                cibleCouleur1.className = "carte_active";
+                cibleCouleur1.style.background = couleur1;
             } else {
                 couleur2 = event.target.getAttribute('data-color');
                 cibleCouleur2 = event.target;
-                event.target.style.background = event.target.getAttribute('data-color');
+                cibleCouleur2.className = "carte_active";
+                cibleCouleur2.style.background = couleur2;
             }
 
             //On vériie que l'utilisateur ne clic pas plusieurs fois sur la même case
@@ -106,6 +108,8 @@ function retournerCarte(event) {
                     interdireclick = true;
 
                     setTimeout(function () {
+                        cibleCouleur1.className = "carte_defaut";
+                        cibleCouleur2.className = "carte_defaut";
                         cibleCouleur1.style.background = "white";
                         cibleCouleur2.style.background = "white";
                         couleur1 = undefined;
